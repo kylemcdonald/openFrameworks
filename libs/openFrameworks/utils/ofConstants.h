@@ -400,13 +400,13 @@ typedef ofBaseApp ofSimpleApp;
 #include <cfloat>
 #include <map>
 #include <stack>
-#if __cplusplus>=201103L || defined(_MSC_VER)
-	#include <unordered_map>
+//#if __cplusplus>=201103L || defined(_MSC_VER)
+//	#include <unordered_map>
 	#include <memory>
-#else
+//#else
 	#include <tr1/unordered_map>
 	using std::tr1::unordered_map;
-#endif
+//#endif
 
 using namespace std;
 

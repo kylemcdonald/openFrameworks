@@ -299,8 +299,10 @@ public:
 // ofPtr
 //----------------------------------------------------------
 #if __cplusplus >= 201103L
+using std::tr1::shared_ptr;
+using std::tr1::weak_ptr;
 template <typename T>
-using ofPtr = std::shared_ptr<T>;
+using ofPtr = std::tr1::shared_ptr<T>;
 #else
 template <typename T>
 class ofPtr: public std::shared_ptr<T>

@@ -217,7 +217,7 @@ void ofLogToConsole();
 /// to email or even Twitter.
 ///
 /// \param loggerChannel A shared pointer to the logger channel.
-void ofSetLoggerChannel(shared_ptr<ofBaseLoggerChannel> loggerChannel);
+void ofSetLoggerChannel(std::tr1::shared_ptr<ofBaseLoggerChannel> loggerChannel);
 
 /// \}
 

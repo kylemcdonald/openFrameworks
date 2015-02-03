@@ -86,7 +86,7 @@ public:
 	ofSoundMixer();
 	virtual ~ofSoundMixer();
 
-    std::shared_ptr<ofBaseSoundOutput> getChannelSource(int channelNumber);
+    shared_ptr<ofBaseSoundOutput> getChannelSource(int channelNumber);
     std::size_t getNumChannels() const;
 
 	/// sets output volume multiplier.
